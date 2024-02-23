@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador-Challenge</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body class="cuerpo">
+        
+        <header>
+            <h1 class="titulo">Encriptador</h1>
+        </header>
+         
+        <main>
+         
+            <section class="parte-ingreso">
+               
+                <div>
+                    <textarea name="casilla-texto" id="casilla" cols="70" rows="23" required placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                
+                <div class="aviso">
+                    <img src="Alura Challenge - Imagenes/bi_exclamation-circle-fill.png" alt="Imagen Exclamacion">
+                    <p>&#160; Solo letras minusculas y sin acentos</p>
+                </div>
+                
+                <div class="botones">
+                    <input type="button" value="Encriptar" class="enc-btn" onclick="btnEncriptar()">
+                    <input type="button" value="Desencriptar" class="des-btn" onclick="btnDesencriptar()">
+                </div>
+            
+            </section>
+            
+                <section class="parte-egreso">
+                <div class="caja-resultado">
+                    <textarea name="resultado" id="resultadoDesencriptado" cols="35" rows="15"></textarea>
+                </div>
+                
+                <div id="imagenMunieco" class="imagenMunieco">
+                    <img src="Alura Challenge - Imagenes/Muñeco.png" alt="imagen muñeco">
+                </div>
+            
+                <div id="textoCaja" class="textoCaja">
+                    <h1>Ningun mensaje fue <br> encontrado</h1>
+                    <p>Ingresa el texto que deseas encriptar o <br> desencriptar.</p>
+                </div>
+                
+                <div>
+                    <input type="button" value="Copiar" id="botonCopiar" onclick="copiar()">
+                </div>
+            
+            </section>
+            
+        </main>
+        <footer>
+            <p class="etiqueta">Creado por Ignacio Noe - 2024</p>
+        </footer>
+    </body>
+       
+<script type="text/javascript" src="javascript.js"></script>
+ 
+</html>
